@@ -1,0 +1,30 @@
+{
+  "name": "@gavive/empire",
+  "version": "1.0.0",
+  "description": "Unified control library for Gavive",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gavive/empire.git"
+  },
+  "keywords": [
+    "Gavive"
+  ],
+  "author": "vreddi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gavive/empire/issues"
+  },
+  "homepage": "https://github.com/Gavive/empire#readme",
+  "peerDependencies": {
+    "react": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.43",
+    "react": "^16.13.1",
+    "typescript": "^3.9.7"
+  }
+}
