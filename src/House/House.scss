@@ -1,0 +1,34 @@
+$color-primary: #224889;
+$color-roof: #A6CFFF;
+$color-ledge: #79AAFF;
+$color-window-left: #65EBFF;
+$color-window-right: #71FBFF;
+$color-window: linear-gradient(to right, $color-window-left, $color-window-left 49.9%, $color-window-right 50%, $color-window-right);
+$color-shadow: #E1EAFF;
+$duration: 500ms;
+$delay: 70ms;
+$easing: cubic-bezier(.1, 0, .3, 1);
+
+$parts: (
+  6: (
+    wings: 425px,
+    front: 150px,
+  ),
+  5: (
+    wings: 355px,
+    front: 150px,
+  ),
+  4: (
+    wings: 300px,
+    front: 125px,
+  ),
+  3: (
+    wings: 240px,
+    front: 150px,
+  ),
+);
+
+.house {
+  height: 225px;
+  width: 520px;
+}
