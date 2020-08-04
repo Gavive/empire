@@ -17,7 +17,7 @@ jobs:
       - run: yarn --frozen-lockfile
       - run: yarn run build --if-present
       - run: yarn test
-      - run: npx semantic-release
+      - run: yarn create semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
