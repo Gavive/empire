@@ -27,15 +27,12 @@
     "url": "https://github.com/Gavive/empire/issues"
   },
   "homepage": "https://github.com/Gavive/empire#readme",
-<<<<<<< Updated upstream
-=======
   "publishConfig": {
     "access": "public"
   },
   "release": {
     "branches": ["official"]
   },
->>>>>>> Stashed changes
   "peerDependencies": {
     "react": ">=16.0.0"
   },
