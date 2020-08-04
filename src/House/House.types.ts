@@ -1,3 +1,5 @@
 export type Props = {};
 
-export type State = {};
+export type State = {
+  roomCount: number;
+};

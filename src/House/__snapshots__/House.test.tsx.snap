@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`🏠 House to match snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="house"
+        data-rooms="1"
+        id="house"
+      >
+        <div
+          class="house-wings"
+          data-flip-key="wings"
+        >
+          <div
+            class="house-left-wing"
+          >
+            <div
+              class="house-window"
+            />
+            <div
+              class="house-window"
+            />
+            <div
+              class="house-sparkle"
+            >
+              <div
+                class="house-sparkle-dots"
+              />
+            </div>
+          </div>
+          <div
+            class="house-right-wing"
+          >
+            <div
+              class="house-window"
+            />
+            <div
+              class="house-window"
+            />
+            <div
+              class="house-sparkle"
+            >
+              <div
+                class="house-sparkle-dots"
+              />
+            </div>
+          </div>
+          <div
+            class="house-roof"
+          >
+            <div
+              class="house-ledge"
+            />
+          </div>
+        </div>
+        <div
+          class="house-front"
+          data-flip-key="front"
+        >
+          <div
+            class="house-chimney"
+          />
+          <div
+            class="house-facade"
+          />
+          <div
+            class="house-window"
+          >
+            <div
+              class="house-sparkle"
+            >
+              <div
+                class="house-sparkle-dots"
+              />
+            </div>
+          </div>
+          <div
+            class="house-doorway"
+          >
+            <div
+              class="house-stairs"
+            />
+            <div
+              class="house-door"
+            />
+          </div>
+          <div
+            class="house-gable"
+          >
+            <div
+              class="house-roof"
+            >
+              <div
+                class="house-ledge"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <label
+        class="house-label"
+        data-rooms="1"
+        for="range"
+        id="label"
+      >
+        Rooms
+      </label>
+      <input
+        id="range"
+        max="6"
+        min="1"
+        step="1"
+        type="range"
+        value="1"
+      />
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="house"
+      data-rooms="1"
+      id="house"
+    >
+      <div
+        class="house-wings"
+        data-flip-key="wings"
+      >
+        <div
+          class="house-left-wing"
+        >
+          <div
+            class="house-window"
+          />
+          <div
+            class="house-window"
+          />
+          <div
+            class="house-sparkle"
+          >
+            <div
+              class="house-sparkle-dots"
+            />
+          </div>
+        </div>
+        <div
+          class="house-right-wing"
+        >
+          <div
+            class="house-window"
+          />
+          <div
+            class="house-window"
+          />
+          <div
+            class="house-sparkle"
+          >
+            <div
+              class="house-sparkle-dots"
+            />
+          </div>
+        </div>
+        <div
+          class="house-roof"
+        >
+          <div
+            class="house-ledge"
+          />
+        </div>
+      </div>
+      <div
+        class="house-front"
+        data-flip-key="front"
+      >
+        <div
+          class="house-chimney"
+        />
+        <div
+          class="house-facade"
+        />
+        <div
+          class="house-window"
+        >
+          <div
+            class="house-sparkle"
+          >
+            <div
+              class="house-sparkle-dots"
+            />
+          </div>
+        </div>
+        <div
+          class="house-doorway"
+        >
+          <div
+            class="house-stairs"
+          />
+          <div
+            class="house-door"
+          />
+        </div>
+        <div
+          class="house-gable"
+        >
+          <div
+            class="house-roof"
+          >
+            <div
+              class="house-ledge"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <label
+      class="house-label"
+      data-rooms="1"
+      for="range"
+      id="label"
+    >
+      Rooms
+    </label>
+    <input
+      id="range"
+      max="6"
+      min="1"
+      step="1"
+      type="range"
+      value="1"
+    />
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

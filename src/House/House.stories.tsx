@@ -1,8 +1,8 @@
 import React from "react";
 import House from "./House";
+import { storiesOf } from '@storybook/react';
+import centered from '@storybook/addon-centered/react';
 
-export default {
-  title: "House"
-};
-
-export const Primary = () => <House />
+storiesOf("House", module)
+  .addDecorator(centered)
+  .add("Default", () => <House />)
