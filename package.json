@@ -1,6 +1,6 @@
 {
   "name": "@gavive/empire",
-  "version": "0.0.2",
+  "version": "0.0.0-development",
   "description": "Unified control library for Gavive",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
@@ -53,5 +53,8 @@
     "sass-loader": "^9.0.2",
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "semantic-release": "^17.1.1"
   }
 }
