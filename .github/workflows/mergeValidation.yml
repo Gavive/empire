@@ -1,0 +1,21 @@
+name: 🔰 Merge Validation
+
+on: push
+
+jobs:
+  build:
+    name: 👷‍♂️ Run build
+    runs-on: ubuntu-latest
+    container: 'node:12-alpine'
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm ci
+      - run: npm run build
+  test:
+    name: 🧪 Run tests
+    runs-on: ubuntu-latest
+    container: 'node:12-alpine'
+    steps:
+      - uses: actions/checkout@v1
+      - run: npm ci
+      - run: npm run test
