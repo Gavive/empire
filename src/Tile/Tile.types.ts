@@ -27,6 +27,13 @@ export type Props = {
    * @default #fff (white)
    */
   background?: string;
+
+  /**
+   * Padding for the content inside the tile.
+   * 
+   * @default 1
+   */
+  padding?: number;
 };
 
 export type State = {

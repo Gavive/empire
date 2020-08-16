@@ -13,7 +13,7 @@ const TileContainer = styled.div<Props>`
   display: flex;
   place-items: center;
   text-align: center;
-  padding: 1em;
+  padding: ${props => `${props.padding}em`};
   border-radius: 2ch;
   border: 1px solid hsl(0 0% 83%);
 `;
@@ -22,7 +22,8 @@ TileContainer.defaultProps = {
   height: 15,
   width: 15,
   shadowType: "saturated",
-  background: "#fff"
+  background: "#fff",
+  padding: 1
 };
 
 export default class Tile extends Component<Props, State> {
