@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import styled from "styled-components";
-import { Props, State } from "./DropDown.types";
+import { Props, State, DropDownOption } from "./DropDown.types";
 
 const Head = styled.a`
   font-family: 'Avenir', 'Helvetica', sans-serif;
@@ -15,7 +15,7 @@ const Head = styled.a`
 `;
 
 Head.defaultProps = {
-  color: "#44958c"
+  color: "#416dea"
 };
 
 const Body = styled.ul`
@@ -26,7 +26,7 @@ const Body = styled.ul`
   position: absolute;
   top: 1em;
   list-style: none;
-  box-shadow: 2px 2px 1px #eee;
+  box-shadow: 0 1em 2em hsl(0 0% 0% / 20%);
   padding: 0em;
 `;
 
@@ -45,7 +45,7 @@ const BodyItem = styled.li`
 `;
 
 BodyItem.defaultProps = {
-  color: "#44958c"
+  color: "#416dea"
 };
 
 export default class DropDown extends Component<Props, State> {
@@ -62,13 +62,13 @@ export default class DropDown extends Component<Props, State> {
   }
 
   public onMouseLeaveHead = () => {
-    this.setState({ showBody: false });
+    this.setState({ showBody: !true });
   }
 
   public renderBodyItems(): JSX.Element[] {
     if (this.props.options) {
-      this.props.options?.map(option => (
-        <BodyItem color={this.props.color}>
+      return this.props.options?.map((option: DropDownOption, index: number) => (
+        <BodyItem key={index} color={this.props.color}>
           <a href={option.linkTo}>{option.label}</a>
         </BodyItem>
       ))
@@ -79,14 +79,14 @@ export default class DropDown extends Component<Props, State> {
 
   public render(): React.ReactNode {
     return (
-      <div onMouseEnter={this.onMouseEnterHead}>
+      <div onMouseOver={this.onMouseEnterHead}>
         <Head color={this.props.color}>
           {this.props.title}
         </Head>
         {
           this.state.showBody &&
           (
-            <Body>
+            <Body onMouseLeave={this.onMouseLeaveHead}>
               {this.renderBodyItems()}
             </Body>
           )
