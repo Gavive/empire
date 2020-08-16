@@ -20,11 +20,18 @@ export default {
       sourcemap: true
     }
   ],
+  external: [
+    "jest.setup.ts",
+    "jest.config.js"
+  ],
   plugins: [
     peerDepsExternal(),
     resolve(),
     commonjs(),
-    typescript({ tsconfig: "tsconfig.json" }),
+    typescript({
+      tsconfig: "tsconfig.json",
+      exclude: ["jest.setup.ts"]
+    }),
     postcss()
   ]
 };
