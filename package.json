@@ -44,6 +44,7 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@storybook/addon-centered": "^5.3.19",
     "@storybook/addon-essentials": "^6.0.5",
+    "@storybook/addon-knobs": "^6.0.16",
     "@storybook/react": "^6.0.5",
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
