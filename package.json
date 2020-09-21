@@ -45,7 +45,7 @@
     "@storybook/addon-centered": "^5.3.19",
     "@storybook/addon-controls": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.5",
-    "storybook-addon-themes": "^6.0.0",
+    "@storybook/addon-knobs": "^6.0.21",
     "@storybook/react": "^6.0.5",
     "@testing-library/jest-dom": "^5.11.2",
     "@testing-library/react": "^10.4.7",
@@ -54,6 +54,7 @@
     "@types/styled-components": "^5.1.2",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "^9.1.2",
+    "framer-motion": "^2.6.13",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.4.0",
     "node-sass": "^4.14.1",
@@ -64,7 +65,9 @@
     "rollup-plugin-typescript2": "^0.27.1",
     "sass-loader": "^9.0.2",
     "semantic-release": "^17.1.1",
+    "storybook-addon-themes": "^6.0.0",
     "styled-components": "^5.1.1",
+    "styled-icons": "^10.19.0",
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
   }
