@@ -4,8 +4,6 @@ export type Props = {
    * @default []
    */
   items: SummaryItem[];
-
-  
 };
 
 export type SummaryItem = {
