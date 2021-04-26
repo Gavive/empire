@@ -2,6 +2,15 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Props, State, DropDownOption } from "./DropDown.types";
 
+const Select = styled.select`
+`;
+
+const Option = styled.option`
+`;
+
+const OptionGroup = styled.optgroup`
+`;
+
 const Head = styled.a`
   font-family: 'Avenir', 'Helvetica', sans-serif;
   color: ${props => props.color};
@@ -68,10 +77,15 @@ export default class DropDown extends Component<Props, State> {
   public renderBodyItems(): JSX.Element[] {
     if (this.props.options) {
       return this.props.options?.map((option: DropDownOption, index: number) => (
-        <BodyItem key={index} color={this.props.color}>
-          <a href={option.linkTo}>{option.label}</a>
-        </BodyItem>
-      ))
+        <Option
+          key={index}
+          color={this.props.color}
+          label={option.label}
+          disabled={option.disabled}
+          value={option.value}
+          selected={option.selected}
+        />
+      ));
     }
 
     return [];
@@ -79,19 +93,17 @@ export default class DropDown extends Component<Props, State> {
 
   public render(): React.ReactNode {
     return (
-      <div onMouseOver={this.onMouseEnterHead}>
-        <Head color={this.props.color}>
-          {this.props.title}
-        </Head>
-        {
-          this.state.showBody &&
-          (
-            <Body onMouseLeave={this.onMouseLeaveHead}>
-              {this.renderBodyItems()}
-            </Body>
-          )
-        }
-      </div>
+      <Select
+        name={this.props.name}
+        autoFocus={this.props.autoFocus}
+        disabled={this.props.disabled}
+        form={this.props.formId}
+        multiple={this.props.multiple}
+        required={this.props.required}
+        size={this.props.size}
+      >
+        {this.renderBodyItems()}
+      </Select>
     );
   }
 }
