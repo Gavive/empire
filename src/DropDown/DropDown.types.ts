@@ -56,7 +56,7 @@ export type Props = {
    * List of option groups under the drop-down. The order in which the option group
    * is provided is the order in which the option groups show up.
    */
-  optionGroups: OptionGroup[];
+  optionGroups?: OptionGroup[];
 
   /**
    * Options of the dropdown. If nothing is provided then the

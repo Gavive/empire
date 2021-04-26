@@ -5,25 +5,15 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div>
-        <a
-          class="sc-AxjAm kZPeoC"
-          color="#416dea"
-        >
-          Test DropDown
-        </a>
-      </div>
+      <select
+        class="sc-AxjAm fDEmJb"
+      />
     </div>
   </body>,
   "container": <div>
-    <div>
-      <a
-        class="sc-AxjAm kZPeoC"
-        color="#416dea"
-      >
-        Test DropDown
-      </a>
-    </div>
+    <select
+      class="sc-AxjAm fDEmJb"
+    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

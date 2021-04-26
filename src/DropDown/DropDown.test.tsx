@@ -22,10 +22,10 @@ describe("🔽 DropDown", () => {
     expect(component).toMatchSnapshot();
   }) 
 
-  it("has the title set correctly", () => {
-    const component = renderComponent();
-    const head = component.container.getElementsByTagName("a").item(0);
+  // it("has the title set correctly", () => {
+  //   const component = renderComponent();
+  //   const head = component.container.getElementsByTagName("a").item(0);
 
-    expect(head?.textContent).toEqual(dropDownTitle);
-  });
+  //   expect(head?.textContent).toEqual(dropDownTitle);
+  // });
 });
