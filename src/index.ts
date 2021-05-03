@@ -8,6 +8,7 @@ import Summary from "./Summary/Summary";
 export * from "./StepSurface";
 export * from "./TextBox";
 export * from "./TextArea";
+export * from "./Avatar";
 import {} from "styled-components/cssprop";
 
 export { House, Button, DropDown, Tile, Table, Panel, Summary };
